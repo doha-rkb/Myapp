@@ -8,7 +8,7 @@ WORKDIR /Myapp
 COPY . /Myapp
 
 # Make port 80 available to the world outside this container
-EXPOSE 80
+docker run -p 8080:80 appimage
 
 # Define environment variable
 ENV NAME World
